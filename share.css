@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /* margin-left: 200px;
+    margin-top: 250px; */
+}
+
+img{
+    width: 300px;
+    height: 400px;
+}
+.card{
+    position: absolute;
+    border-radius: .5rem;
+    width: 300px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    background: -webkit-linear-gradient(bottom left, #7f00ff, #e100ff);
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.322);
+}
+
+.shareCon{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    cursor: pointer;
+}
+
+.shareCon li{
+    list-style: none;
+}
+
+.shareCon li a{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 3px solid #d8e2dc;
+    background: #fff;
+    text-align: center;
+    transform: translateY(10px);
+    transition: 0.3s;
+    opacity: 0;
+    color: #262626;
+    margin-bottom: 5px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    border-radius: .5rem;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card:hover .middle {
+    opacity: 1; 
+}
+
+.text {
+    background-color: rgb(29, 17, 136);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 16px 16px;
+}
+
+.card:hover .shareCon li a{
+    transform: translateY(50px);
+    opacity: 1;
+}
+
+.card .shareCon li a .fa{
+    font-size: 24px;
+    line-height: 40px;
+    transition: 0.5s;
+}
+
+.card:hover .shareCon li:nth-child(1) a{
+    transition-delay: 0.2s;
+}
+
+.card:hover .shareCon li:nth-child(2) a{
+    transition-delay: 0.4s;
+}
+
+.card:hover .shareCon li:nth-child(3) a{
+    transition-delay: 0.6s;
+}
+
+.fa-facebook:hover{
+    color: #3b5998;
+}
+
+.fa-instagram:hover{
+    color: #bc2a8d;
+}
+
+.fa-twitter:hover{
+    color: #00aced;
+}
